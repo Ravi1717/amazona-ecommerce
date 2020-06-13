@@ -110,6 +110,7 @@ a:hover {
 }
 .sidebar {
   position: fixed;
+  transition: all 0.4s ease-in-out;
   transform: translateX(-30rem);
   width: 30rem;
   background-color: #f0f0f0;
