@@ -36,6 +36,7 @@ body {
 .header-links a {
   color: #ffffff;
   text-decoration: none;
+  margin: 1rem;
 }
 .header-links a:hover {
   color: #ff8000;
