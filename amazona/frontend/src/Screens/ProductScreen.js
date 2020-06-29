@@ -1,6 +1,9 @@
 import React from "react";
+import data from "../data";
 
-function HomeScreen(props) {
+function ProductScreen(props) {
+  console.log(props.match.params.id);
+
   return <div>ProductScreen</div>;
 }
-export default HomeScreen;
+export default ProductScreen;
