@@ -68,7 +68,7 @@ function ProductScreen(props) {
                   }}
                 >
                   {[...Array(product.countInStock).keys()].map((
-                    x //SELECT OPTION IS GETTING FROM THE PRODUCT STOCK FROM THE SERVER.
+                    x //SELECT OPTIONS IS GETTING FROM THE PRODUCT STOCK FROM THE SERVER.
                   ) => (
                     <option key={x + 1} value={x + 1}>
                       {x + 1}
