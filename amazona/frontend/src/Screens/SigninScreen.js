@@ -1,21 +1,29 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
+import { signin } from "../actions/userActions";
 
 function SigninScreen(props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const userSignin = useSelector((state) => state.userSignin);
+  const { loading, userInfo, error } = userSignin;
+
   const dispatch = useDispatch();
 
   useEffect(() => {
+    if (userInfo) {
+      props.history.push("/");
+    }
     return () => {
       //
     };
-  }, []);
+  }, [userInfo]);
 
   const submitHandler = (e) => {
     e.preventDefault();
+    dispatch(signin(email, password));
   };
 
   return (
@@ -23,10 +31,14 @@ function SigninScreen(props) {
       <form submit={submitHandler}>
         <ul className="form-container">
           <li>
-            <h3>Sign In</h3>
+            <h2>Sign-In</h2>
           </li>
           <li>
-            <label for="email">Email</label>
+            {loading && <div>Loading...</div>}
+            {error && <div>{error}</div>}
+          </li>
+          <li>
+            <label htmlFor="email">Email</label>
             <input
               type="email"
               name="email"
@@ -35,7 +47,7 @@ function SigninScreen(props) {
             ></input>
           </li>
           <li>
-            <label for="password">Password</label>
+            <label htmlFor="password">Password</label>
             <input
               type="password"
               id="password"
@@ -50,7 +62,7 @@ function SigninScreen(props) {
           </li>
           <li>New to amazona?</li>
           <li>
-            <Link to="/register" className="button full-width">
+            <Link to="/register" className="button secondary text-center">
               Create your amazona account
             </Link>
           </li>
