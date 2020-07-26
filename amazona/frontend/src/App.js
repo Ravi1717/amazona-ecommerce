@@ -32,7 +32,7 @@ function App() {
             {userInfo ? (
               <Link to="/profile">{userInfo.name}</Link>
             ) : (
-              <Link to="/signin">Sign In</Link>
+              <Link to="/signin">Sign-In</Link>
             )}
           </div>
         </header>
