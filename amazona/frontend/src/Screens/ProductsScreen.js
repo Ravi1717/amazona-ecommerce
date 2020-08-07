@@ -157,7 +157,7 @@ function ProductsScreen(props) {
                   onClick={() => setModalVisible(false)}
                   className="button secondary"
                 >
-                  Back
+                  Back to previous
                 </button>
               </li>
             </ul>
