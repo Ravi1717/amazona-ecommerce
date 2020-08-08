@@ -83,7 +83,9 @@ function ProductsScreen(props) {
     <div className="content content-margined">
       <div className="product-header">
         <h3>Products</h3>
-        <button onClick={() => openModal({})}>Create Product</button>
+        <button className="button primary" onClick={() => openModal({})}>
+          Create Product
+        </button>
       </div>
       {modalVisible && (
         <div className="form">
@@ -185,7 +187,7 @@ function ProductsScreen(props) {
       )}
 
       <div className="product-list">
-        <table>
+        <table className="table">
           <thead>
             <tr>
               <th>ID</th>
