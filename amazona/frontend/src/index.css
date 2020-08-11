@@ -358,3 +358,23 @@ tbody > tr:nth-child(odd) {
   padding: 1rem;
   margin: 1rem;
 }
+.placeorder-info > div:first-child {
+  margin-top: 0;
+}
+
+.placeorder-action > ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.placeorder-action > ul > li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.placeorder-action > ul > li:last-child {
+  font-size: 2rem;
+  color: #c04000;
+  font-weight: bold;
+}

@@ -29,7 +29,7 @@ function App() {
         <header className="header">
           <div className="brand">
             <button onClick={openMenu}>&#9776;</button>
-            <Link to="/">amazona</Link>
+            <Link to="/">E-CART</Link>
           </div>
           <div className="header-links">
             <a href="cart.html">Cart</a>
@@ -69,7 +69,7 @@ function App() {
           <ul></ul>
         </main>
         <footer className="footer">
-          <small>&copy; Copyright 2020, Amazona Corporation</small>
+          <small>&copy; Copyright 2020, E-CART Corporation</small>
         </footer>
       </div>
     </BrowserRouter>

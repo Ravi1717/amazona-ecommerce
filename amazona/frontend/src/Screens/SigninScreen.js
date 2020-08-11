@@ -64,7 +64,7 @@ function SigninScreen(props) {
               Signin
             </button>
           </li>
-          <li>New to amazona?</li>
+          <li>New to e-cart?</li>
           <li>
             <Link
               to={
@@ -72,7 +72,7 @@ function SigninScreen(props) {
               }
               className="button secondary text-center"
             >
-              Create your amazona account
+              Create your e-cart account
             </Link>
           </li>
         </ul>
